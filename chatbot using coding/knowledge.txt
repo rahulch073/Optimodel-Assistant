@@ -1,0 +1,59 @@
+1. Why is optimization important in AI model training?
+Answer:
+Optimization improves model performance, reduces training time, and lowers computational cost. Without it, models may not converge properly or may overfit. It ensures efficient use of resources like CPU, GPU, and memory. Ultimately, it leads to better generalization on unseen data.
+
+2.What are hyperparameters in model training?
+Answer:
+Hyperparameters are configuration settings defined before training begins. Examples include learning rate, batch size, and number of epochs. They control how the model learns rather than what it learns. Proper tuning of these is essential for optimal performance.
+
+3. How does hyperparameter tuning work?
+Answer:
+Hyperparameter tuning tests different parameter combinations to find the best setup. Techniques include grid search, random search, and Bayesian optimization. It evaluates each configuration based on performance metrics. The best combination is selected for final training.
+
+4. . What is overfitting in AI models?
+Answer:
+Overfitting occurs when a model learns noise and details from training data. It performs very well on training data but poorly on unseen data. This reduces its generalization ability. Techniques like regularization help prevent it.
+
+5. . How can overfitting be reduced?
+Answer:
+Overfitting can be reduced using dropout, regularization, and data augmentation. Increasing training data also helps improve generalization. Cross-validation can detect overfitting early. Simplifying the model can also reduce overfitting.
+
+6. What is underfitting?
+Answer:
+Underfitting happens when a model is too simple to learn patterns in the data. It performs poorly on both training and test datasets. This indicates insufficient learning. Increasing model complexity can help resolve it.
+
+7. What is loss function?
+Answer:
+A loss function measures the difference between predicted and actual values. It guides the model during training. The goal is to minimize this value. Different tasks use different loss functions.
+
+8. How does an assistant select the best model?
+Answer:
+It compares models using metrics like accuracy, precision, and loss. It may test multiple architectures and configurations. Automated tools rank models based on performance. The best model is selected for deployment.
+
+9. When should transfer learning be used?
+Answer:
+It is useful when there is limited data for training. It is also used when training from scratch is expensive. Common applications include image recognition and NLP. It speeds up development.
+
+10. How does regularization work?
+Answer:
+Regularization adds penalties to large weights in the model. This prevents overfitting by simplifying the model. Common types include L1 and L2. It improves generalization performance.
+
+11. What is L1 vs L2 regularization?
+Answer:
+L1 regularization reduces some weights to zero, removing features. L2 regularization reduces weight magnitude without removing features. Both help prevent overfitting. They improve model stability.
+
+12. How does an assistant detect poor performance?`
+Answer:
+It monitors metrics like loss, accuracy, and validation scores. Sudden drops or stagnation indicate issues. It can alert users or adjust parameters. This ensures continuous improvement.
+
+13. What is model evaluation?
+Answer:
+Model evaluation measures performance using metrics. It checks how well the model generalizes. Common metrics include accuracy and precision. It guides improvements
+
+14. What is the role of an optimization assistant overall?
+Answer:
+It automates and enhances model training processes. It improves performance and reduces time. It ensures efficient use of resources. It supports scalable AI development
+
+15 . Why is model initialization important?
+Answer:
+Initialization sets the starting weights of a model. Poor initialization can slow down convergence or cause instability. Good initialization improves training speed. It helps avoid vanishing or exploding gradients

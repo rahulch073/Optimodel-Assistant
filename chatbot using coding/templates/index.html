@@ -1,0 +1,36 @@
+<h3> OptiModel Assitant</h3>
+<input type="text" id="userInput" placeholder="Type your message...">
+<button onclick="sendMessage()">Send</button>
+
+<div id="chatbox"></div>
+
+<script>
+async function sendMessage() {
+    const userInput = document.getElementById("userInput").value;
+
+    if (userInput.trim() === "") return; // prevent empty message
+
+    const response = await fetch("/chat", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ message: userInput })
+    });
+
+    const data = await response.json();
+
+    document.getElementById("chatbox").innerHTML +=
+        "<p><b>You:</b> " + userInput + "</p>" +
+        "<p><b>Bot:</b> " + data.reply + "</p>";
+
+    document.getElementById("userInput").value = "";
+}
+
+document.getElementById("userInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        sendMessage();
+    }
+});
+</script>
